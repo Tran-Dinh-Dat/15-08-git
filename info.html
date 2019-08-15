@@ -1,0 +1,39 @@
+<h3>Listing Your Tags</h3>
+<ul>
+    <li>git tag</li>
+    <li>git tag -l "v1.8.5*"</li>
+    <li>git tag -l "v1.8.5"</li>
+</ul>
+<h3>Creating Tags</h3>
+<p>Git supports two types of tags: lightweight and annotated.</p>
+<ul>
+    <li>Annotated Tags: git tag -a v1.4 -m "my version 1.4"</li>
+    <li>Lightweight Tags: git tag v1.4-lw</li>
+    <li>(Tagging Later): git tag -a v1.2 9fceb02   (9fceb02: git log --pretty=oneline)</li>
+</ul>
+<p>git show v1.2</p>
+<h3>Sharing Tags</h3>
+<ul>
+    <li>git push origin v1.5</li>
+</ul>
+<h3>Deleting Tags</h3>
+<ul>
+    <li>git tag -d &lt;tagname	&gt;</li>
+    <li> git tag -d v1.4-lw</li>
+    <li>git push origin --delete &lt;tagname	&gt;</li>
+</ul>
+<h3>Checking out Tags</h3>
+<ul>
+    <li>git checkout 2.0.0</li>
+</ul>
+<h3>Git aliases</h3>
+<ul>
+    <li>Git cho phép người dùng tạo ra các aliases làm cho các câu lệnh git trở nên ngắn gọn hơn</li>
+    <li>
+        <pre><code class="ui segment hljs ruby"><span class="hljs-variable">$ </span>git config --global <span class="hljs-keyword">alias</span>.co checkout
+            <span class="hljs-variable">$ </span>git config --global <span class="hljs-keyword">alias</span>.br branch
+            <span class="hljs-variable">$ </span>git config --global <span class="hljs-keyword">alias</span>.ci commit
+            <span class="hljs-variable">$ </span>git config --global <span class="hljs-keyword">alias</span>.st status
+</code></pre>
+    </li>
+</ul>
